@@ -9,5 +9,15 @@
 import Foundation
 
 class BadGuy2:Enemy {
+   
+    override var type: String {
+        return "Devil Wizard"
+        //Devil Wizard is overriding the default "Grunt" and is the name for this tougher bad guy
+    }
+
     
+    override var loot: [String] {
+        return ["Staff or Ra", "Tax Audit", "Decent Bowler Hat", "Slightly Used Sleeping Bag"]
+        //Since in appearance its a more powerful enemy we want to add better loot
+    }
 }
