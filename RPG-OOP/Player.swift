@@ -22,6 +22,12 @@ class Player:Character {
     var inventory: [String] {
         return _inventory
     }
+    
+    func addItemToInventory(item: String) {
+        _inventory.append(item)
+    }
+    
+    
     convenience init(name:String, hp:Int, attackPwr: Int) {
         self.init (startingHp: hp, attackPwr: attackPwr)
         // self.init above instead of referring to type like int or string, but this init is pulling from the Character class.
